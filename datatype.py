@@ -167,5 +167,41 @@ print(actress)
 actress.discard("3sha")
 print(actress)
 
+'''
+dict --> {key: value}
+
+key --> can't be duplicated
+
+value can be duplicated
+
+mutable
+
+multiple type of data
+
+
+'''
+
+std_details =  {"std_name" : "Ashika", "Age": 99, "email":"Ashika@gmail.com", "mobileno": 83983983893,
+                "subject":["python", "Selenium", "playwright", "github", "manualTesting"]}
+
+print(std_details["std_name"])
+print(std_details["Age"])
+print(std_details.keys())
+print(std_details.values())
+
+print(std_details.get("std_name"))
+
+print(std_details.get("abc"))
+#print(std_details["abc"])
+
+std_details.update({"location":"Chennai"})
+print(std_details)
+std_details.update({"location":"Coimbatore"})
+print(std_details)
+print(std_details["subject"])
+print(std_details["subject"][3])
+
+std_details["Age"] = 100
+print(std_details)
 
 
